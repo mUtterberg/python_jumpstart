@@ -4,6 +4,7 @@ import bs4
 
 def main():
     print_the_header()
+    # TODO: validate user input is a five-digit integer
     user_zip: str = input('What zipcode do you want the weather for? (#####)')
     html = get_html_from_web(user_zip)
     weather = parse_weather_from_html(html)
